@@ -8,6 +8,7 @@ public class LibreriasalvadorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibreriasalvadorApplication.class, args);
+		System.out.println("Hola, este es mi proyecto de SpringBoot");
 	}
 
 }
