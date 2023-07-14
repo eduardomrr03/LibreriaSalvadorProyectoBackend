@@ -1,4 +1,4 @@
-# Proyecto Sistema Web Libreria Salvador - Backend 📚💻
+# Proyecto Sistema Web Libreria Salvador - Backend 📊
 
 <strong>Proyecto:</strong>
 
