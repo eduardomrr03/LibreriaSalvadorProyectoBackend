@@ -1,5 +1,7 @@
 package com.arquisoftware.libreriasalvador.Servicios;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,6 +9,8 @@ import com.arquisoftware.libreriasalvador.Entidades.Usuario;
 import com.arquisoftware.libreriasalvador.Exception.RegistroUsuarioException;
 import com.arquisoftware.libreriasalvador.Exception.UsuarioNotFoundException;
 import com.arquisoftware.libreriasalvador.Repositorios.UsuarioRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service
 public class UsuarioService {
@@ -44,4 +48,9 @@ public class UsuarioService {
     }
 
     // Aquí puedes agregar otros métodos relacionados con la gestión de usuarios
+    @Transactional
+    public List<Usuario> obtenerUsuarios() {
+        return usuarioRepository.findAll();
+    }
+    
 }
